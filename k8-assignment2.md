@@ -165,7 +165,7 @@ kubectl exec postgres-pod -it -- /bin/bash
 ### Step 2: Connect to the db
 
 ```docker
-psql -h db-service.default.svc.cluste.local -p 5432 -U postgres
+psql -h db-service.default.svc.cluster.local -p 5432 -U postgres
 ```
 
 ![Untitled](images/Untitled%208.png)
