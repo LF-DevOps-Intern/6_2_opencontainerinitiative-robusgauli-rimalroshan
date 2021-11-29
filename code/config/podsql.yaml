@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: psql-pod
+  labels:
+   client: psql
+spec:
+  containers:
+      - name: psql-container
+        image: rimalroshan/psql
+        imagePullPolicy: Never
+        env:
+        - name: PGPASSWORD
+          value: lfttest
